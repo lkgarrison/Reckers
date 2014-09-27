@@ -37,12 +37,23 @@ static int CELL_HEIGHT = 88;
 
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
-	
+	/*
+	// Check if user has signed in
 	if (![PFUser currentUser]) {
 		[self dismissViewControllerAnimated:YES completion:^(void) {
 			[self performSegueWithIdentifier:@"gotoLogin" sender:self];
 		}];
+	}*/
+	
+	// Send request for menu
+	PFQuery *query = [PFQuery queryWithClassName:@"Menu"];
+	[query selectKeys:@[@"foodCategory"]];
+	NSArray *queryResponse = [query findObjects:nil];
+	for (NSInteger i = 0; i < [queryResponse count]; ++i) {
+		self.foodTypes[i] = [queryResponse[i] objectForKey:@"foodCategory"];
 	}
+	//NSLog(@"%@", [self.foodTypes description]);
+	
 	
 	if ((self.sectionInfoArray == nil) ||
 		([self.sectionInfoArray count] != [self numberOfSectionsInTableView:self.tableView])) {
@@ -68,6 +79,8 @@ static int CELL_HEIGHT = 88;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+	
+	NSLog(@"viewDidLoad");
 	
 	self.tableView.sectionHeaderHeight = CELL_HEIGHT;
 	self.uniformRowHeight = CELL_HEIGHT;

@@ -30,6 +30,8 @@
 		
 		// Present the log in view controller
 		[self presentViewController:myLoginViewController animated:YES completion:NULL];
+	} else {
+		[self performSegueWithIdentifier:@"gotoMenu" sender:self];
 	}
 }
 
@@ -45,13 +47,11 @@
 
 // Sent to the delegate when a PFUser is logged in.
 - (void)logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user {
-	NSLog(@"Logged in.");
+	//NSLog(@"Logged in.");
 	//[self dismissViewControllerAnimated:YES completion:NULL];
-	/*[self dismissViewControllerAnimated:YES completion:^(void) {
-		[self performSegueWithIdentifier:@"gotoMenu"
-								  sender:self];
-	}];*/
-//	CollapsibleTableViewController *menuViewController = [[CollapsibleTableViewController alloc] init];
+	[self dismissViewControllerAnimated:YES completion:^(void) {
+		[self performSegueWithIdentifier:@"gotoMenu" sender:self];
+	}];
 }
 
 // Sent to the delegate when the log in attempt fails.
