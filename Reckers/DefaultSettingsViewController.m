@@ -7,6 +7,7 @@
 //
 
 #import "DefaultSettingsViewController.h"
+#import "LoginViewController.h"
 
 @interface DefaultSettingsViewController ()
 
@@ -18,34 +19,52 @@
 	[super viewWillAppear:animated];
 	if ([PFUser currentUser]) {
 		self.welcomeLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Welcome %@!", nil), [[PFUser currentUser] username]];
-	} else {
-		self.welcomeLabel.text = NSLocalizedString(@"Not logged in", nil);
 	}
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+- (void)viewDidAppear:(BOOL)animated {
+	[super viewDidAppear:animated];
+	
 	if (![PFUser currentUser]) { // No user logged in
 		// Create the log in view controller
-		PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
-		[logInViewController setDelegate:self]; // Set ourselves as the delegate
-		
-		// Create the sign up view controller
-		PFSignUpViewController *signUpViewController = [[PFSignUpViewController alloc] init];
-		[signUpViewController setDelegate:self]; // Set ourselves as the delegate
-		
-		// Assign our sign up controller to be displayed from the login controller
-		[logInViewController setSignUpController:signUpViewController];
+		LoginViewController *myLoginViewController = [[LoginViewController alloc] init];
+		myLoginViewController.fields = PFLogInFieldsUsernameAndPassword | PFLogInFieldsLogInButton;
+		[myLoginViewController setDelegate:self]; // Set ourselves as the delegate
 		
 		// Present the log in view controller
-		[self presentViewController:logInViewController animated:YES completion:NULL];
+		[self presentViewController:myLoginViewController animated:YES completion:NULL];
 	}
+	
+}
+
+- (BOOL)logInViewController:(PFLogInViewController *)logInController shouldBeginLogInWithUsername:(NSString *)username password:(NSString *)password {
+	// Check if both fields are completed
+	if (username && password && username.length && password.length) {
+		return YES; // Begin login process
+	}
+	
+	[[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Missing Information", nil) message:NSLocalizedString(@"Make sure you fill out all of the information!", nil) delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", nil) otherButtonTitles:nil] show];
+	return NO; // Interrupt login process
+}
+
+// Sent to the delegate when a PFUser is logged in.
+- (void)logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user {
+	[self dismissViewControllerAnimated:YES completion:NULL];
+}
+
+// Sent to the delegate when the log in attempt fails.
+- (void)logInViewController:(PFLogInViewController *)logInController didFailToLogInWithError:(NSError *)error {
+	NSLog(@"Failed to log in...");
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)logOutButtonTapAction:(id)sender {
+	[PFUser logOut];
+	[self.navigationController popViewControllerAnimated:YES];
 }
 
 /*
