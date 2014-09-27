@@ -11,7 +11,12 @@
 @interface Food : NSObject
 
 @property (nonatomic, strong) NSString *name;
-@property float price;
+@property (nonatomic, strong) NSNumber *price;
 @property (nonatomic, strong) NSString *subtext;
+@property (nonatomic, strong) NSString *category;
+
+- (instancetype)initWithName:(NSString *)string Price:(NSNumber *)price Description:(NSString *)subtext Category:(NSString *)category;
+
++ (NSString *)category;
 
 @end

@@ -7,10 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Food.h"
 
 @interface FoodType : NSObject
 
 @property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSArray *foods; // Of Food
+@property (nonatomic, strong) NSMutableArray *foods;
+
+- (instancetype)initWithName:(NSString *)name Food:(Food *)food;
++ (NSString *)name;
 
 @end

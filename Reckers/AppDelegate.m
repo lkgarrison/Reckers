@@ -8,9 +8,18 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
+#import "FoodType.h"
+#import "Food.h"
+#import "CollapsibleTableViewController.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic, strong) NSMutableArray *foodTypes;
+@property (nonatomic, strong) NSMutableArray *Sides;
+@property (nonatomic, strong) NSMutableArray *AmericanFare;
+@property (nonatomic, strong) NSMutableArray *Piadina;
+@property (nonatomic, strong) NSMutableArray *Pizza;
+@property (nonatomic, strong) NSMutableArray *Salad;
+@property (nonatomic, strong) NSMutableArray *Breakfast;
 @end
 
 @implementation AppDelegate

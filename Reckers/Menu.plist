@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>results</key>
+	<array>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T02:10:45.140Z</string>
+			<key>description</key>
+			<string>Shaved Italian prosciutto, scrambled eggs, fresh Mozzarella cheese,
+fresh basil and diced tomatoes. </string>
+			<key>foodCategory</key>
+			<string>Breakfast</string>
+			<key>item</key>
+			<string>Prosciutto &amp; Egg Grilled Piadina</string>
+			<key>objectId</key>
+			<string>2t3GrBRdiG</string>
+			<key>price</key>
+			<real>4.4500000000000002</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T02:12:52.734Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T02:10:24.590Z</string>
+			<key>description</key>
+			<string>Grilled steak, scrambled eggs, onions, peppers and Mozzarella cheese. </string>
+			<key>foodCategory</key>
+			<string>Breakfast</string>
+			<key>item</key>
+			<string>Steak &amp; Egg Grilled Piadina</string>
+			<key>objectId</key>
+			<string>hresiQxxlF</string>
+			<key>price</key>
+			<real>5.75</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T02:12:52.364Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T02:10:49.403Z</string>
+			<key>description</key>
+			<string>Crisp bacon, scrambled eggs, spinach, diced tomatoes
+and goat cheese. </string>
+			<key>foodCategory</key>
+			<string>Breakfast</string>
+			<key>item</key>
+			<string>Bacon &amp; Egg Grilled Piadina</string>
+			<key>objectId</key>
+			<string>tFNyAP2fOT</string>
+			<key>price</key>
+			<real>4.4500000000000002</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T02:12:53.143Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T02:10:55.468Z</string>
+			<key>description</key>
+			<string>Marinated grilled chicken breast, scrambled eggs, onions, peppers,
+and Mozzarella/Provolone cheese. </string>
+			<key>foodCategory</key>
+			<string>Breakfast</string>
+			<key>item</key>
+			<string>Grilled Chicken Breast &amp; Egg Grilled Piadina</string>
+			<key>objectId</key>
+			<string>q9477XAzUD</string>
+			<key>price</key>
+			<real>4.4500000000000002</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T02:12:53.478Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T02:09:25.358Z</string>
+			<key>description</key>
+			<string>Char-grilled zucchini, yellow squash, red onions, tomatoes,
+and Mozzarella/Provolone cheese. </string>
+			<key>foodCategory</key>
+			<string>Breakfast</string>
+			<key>item</key>
+			<string>Grilled Vegetables Piadina</string>
+			<key>objectId</key>
+			<string>l9rLO3nPf0</string>
+			<key>price</key>
+			<real>3.9500000000000002</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T02:13:13.632Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T02:13:34.175Z</string>
+			<key>description</key>
+			<string>Freshly scrambled eggs and your choice of cheese
+served in a warm piadina. Each additional topping: $.55 - $1.00</string>
+			<key>foodCategory</key>
+			<string>Breakfast</string>
+			<key>item</key>
+			<string>Build Your Own Piadina</string>
+			<key>objectId</key>
+			<string>vyJZP5H2Vi</string>
+			<key>price</key>
+			<real>3.25</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T02:14:46.990Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T02:15:12.577Z</string>
+			<key>description</key>
+			<string>Reckers’ House Salad</string>
+			<key>foodCategory</key>
+			<string>Salad</string>
+			<key>item</key>
+			<string>Reckers’ House Salad</string>
+			<key>objectId</key>
+			<string>BVYlXO9qjg</string>
+			<key>price</key>
+			<real>3.75</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T02:15:46.435Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T02:15:19.242Z</string>
+			<key>description</key>
+			<string>Piadina topped with house greens, grilled chicken breast, celery,
+bleu cheese, red onions, bacon, diced tomato, toasted croutons,
+and Recker’s spicy buffalo salad dressing. </string>
+			<key>foodCategory</key>
+			<string>Salad</string>
+			<key>item</key>
+			<string>Char-Grilled Chicken Buffalo Salad</string>
+			<key>objectId</key>
+			<string>pUbgLmgnyP</string>
+			<key>price</key>
+			<real>5.8499999999999996</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T02:16:17.950Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T02:15:19.645Z</string>
+			<key>description</key>
+			<string>Piadina topped with Romaine lettuce, char-grilled chicken breast,
+shaved Parmesan, toasted croutons, and Recker’s Caesar dressing. </string>
+			<key>foodCategory</key>
+			<string>Salad</string>
+			<key>item</key>
+			<string>Char-Grilled Chicken Caesar Salad</string>
+			<key>objectId</key>
+			<string>2oQ7yyxAOS</string>
+			<key>price</key>
+			<real>5.8499999999999996</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T02:16:35.882Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T02:15:20.784Z</string>
+			<key>description</key>
+			<string>Char-grilled organic piadina topped with house greens, prosciutto, fresh
+Mozzarella, red onions, sun-dried tomatoes, diced cucumbers, sliced black 
+olives, fresh basil, toasted croutons and served with Italian vinaigrette. </string>
+			<key>foodCategory</key>
+			<string>Salad</string>
+			<key>item</key>
+			<string>Michelangelo’s Piadina Salad</string>
+			<key>objectId</key>
+			<string>TXZ1APupHd</string>
+			<key>price</key>
+			<real>5.9500000000000002</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T02:16:53.868Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T02:30:15.408Z</string>
+			<key>description</key>
+			<string>Char-grilled beef steak, cheddar cheese, red onions, green peppers
+and Recker’s BBQ sauce. </string>
+			<key>foodCategory</key>
+			<string>Piadinas</string>
+			<key>item</key>
+			<string>BBQ Grilled Steak Piadina</string>
+			<key>objectId</key>
+			<string>UxrzA2diXz</string>
+			<key>price</key>
+			<real>6.0499999999999998</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T04:45:09.416Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T02:30:15.726Z</string>
+			<key>description</key>
+			<string>Crisp bacon, fresh tomatoes, fresh Mozzarella cheese,
+mixed greens, red onions and pesto mayonnaise. </string>
+			<key>foodCategory</key>
+			<string>Piadinas</string>
+			<key>item</key>
+			<string>Italian BLT Piadina</string>
+			<key>objectId</key>
+			<string>gCkx6hySJS</string>
+			<key>price</key>
+			<real>4.9500000000000002</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T04:45:12.732Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T02:30:16.416Z</string>
+			<key>description</key>
+			<string>Char-grilled chicken strips, red onion, tomato, celery, bleu cheese,
+leaf lettuce and Recker’s buffalo wild mild sauce.</string>
+			<key>foodCategory</key>
+			<string>Piadinas</string>
+			<key>item</key>
+			<string>Buffalo Chicken Piadina</string>
+			<key>objectId</key>
+			<string>6LR30ogzIk</string>
+			<key>price</key>
+			<real>5.6500000000000004</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T04:45:17.493Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T02:30:17.130Z</string>
+			<key>description</key>
+			<string>Shaved Italian prosciutto, goat cheese, grilled onions, tomatoes,
+spinach, shaved Parmesan and pesto. </string>
+			<key>foodCategory</key>
+			<string>Piadinas</string>
+			<key>item</key>
+			<string>Piadina Umbria</string>
+			<key>objectId</key>
+			<string>476U9iXMs5</string>
+			<key>price</key>
+			<real>5.6500000000000004</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T04:45:24.727Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T02:30:19.152Z</string>
+			<key>description</key>
+			<string>Swiss, cheddar and American. </string>
+			<key>foodCategory</key>
+			<string>Piadinas</string>
+			<key>item</key>
+			<string>Grilled Three Cheese</string>
+			<key>objectId</key>
+			<string>AstLT4lJlL</string>
+			<key>price</key>
+			<real>3.5499999999999998</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T04:45:27.927Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T02:30:10.433Z</string>
+			<key>description</key>
+			<string>Fresh Mozzarella, tomato, red onion, fresh basil
+and pesto. Served cold. </string>
+			<key>foodCategory</key>
+			<string>Piadinas</string>
+			<key>item</key>
+			<string>Piadina Neapolitan</string>
+			<key>objectId</key>
+			<string>g37vOigY4g</string>
+			<key>price</key>
+			<real>4.8499999999999996</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T04:45:01.260Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T04:48:40.903Z</string>
+			<key>description</key>
+			<string>Hummus, sundried tomatoes, goat cheese, onions, black
+olives, green peppers, and Mozzarella/Provolone cheeses. </string>
+			<key>foodCategory</key>
+			<string>Pizza</string>
+			<key>item</key>
+			<string>Garden Pizza</string>
+			<key>objectId</key>
+			<string>T56V9m79kF</string>
+			<key>price</key>
+			<real>6.4500000000000002</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T04:51:50.582Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T02:30:14.662Z</string>
+			<key>description</key>
+			<string>Chicken, fresh romaine, tomatoes, shaved Parmesan
+and Caesar dressing. Served cold. </string>
+			<key>foodCategory</key>
+			<string>Piadinas</string>
+			<key>item</key>
+			<string>Chicken Caesar</string>
+			<key>objectId</key>
+			<string>1Fl2fBoiXl</string>
+			<key>price</key>
+			<real>5.6500000000000004</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T04:45:04.478Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T02:30:15.053Z</string>
+			<key>description</key>
+			<string>Freshly grilled squashes, onions, mushrooms, tomatoes,
+goat cheese, spinach and lemon pesto. </string>
+			<key>foodCategory</key>
+			<string>Piadinas</string>
+			<key>item</key>
+			<string>Vegetarian Piadina</string>
+			<key>objectId</key>
+			<string>ZK2oTSoeeK</string>
+			<key>price</key>
+			<real>5.5499999999999998</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T04:45:07.685Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T02:30:16.092Z</string>
+			<key>description</key>
+			<string>Char-grilled chicken, red onion, shaved Parmesan, leaf lettuce,
+black olives and pesto. </string>
+			<key>foodCategory</key>
+			<string>Piadinas</string>
+			<key>item</key>
+			<string>Piadina Genovese</string>
+			<key>objectId</key>
+			<string>eOjb4WYOvY</string>
+			<key>price</key>
+			<real>5.6500000000000004</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T04:45:14.942Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T02:30:16.748Z</string>
+			<key>description</key>
+			<string>Char-grilled yellow fin tuna, shaved Parmesan, mixed greens,
+red onion, black olives, fresh basil and a lemon pesto. </string>
+			<key>foodCategory</key>
+			<string>Piadinas</string>
+			<key>item</key>
+			<string>Grilled Tuna Piadina</string>
+			<key>objectId</key>
+			<string>aTRZ8cKGjG</string>
+			<key>price</key>
+			<real>5.8499999999999996</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T04:45:20.893Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T04:48:35.340Z</string>
+			<key>description</key>
+			<string>Pesto sauce, shaved Italian Prosciutto, spinach, goat cheese,
+sun-dried tomatoes, and Mozzarella. </string>
+			<key>foodCategory</key>
+			<string>Pizza</string>
+			<key>item</key>
+			<string>Pizza Toscana</string>
+			<key>objectId</key>
+			<string>gnvzwexvPl</string>
+			<key>price</key>
+			<real>6.4500000000000002</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T04:51:50.202Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T04:48:45.190Z</string>
+			<key>description</key>
+			<string>Pesto sauce, char-grilled chicken, green peppers, spinach,
+sun-dried tomatoes, goat cheese, and Mozzarella. </string>
+			<key>foodCategory</key>
+			<string>Pizza</string>
+			<key>item</key>
+			<string>Pizza Pollo</string>
+			<key>objectId</key>
+			<string>dzePZdnu2y</string>
+			<key>price</key>
+			<real>6.4500000000000002</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T04:51:50.972Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T04:48:52.027Z</string>
+			<key>description</key>
+			<string>BBQ sauce, char-grilled chicken, red onions, green peppers,
+Mozzarella &amp; cheddar cheese. </string>
+			<key>foodCategory</key>
+			<string>Pizza</string>
+			<key>item</key>
+			<string>BBQ Chicken Pizza</string>
+			<key>objectId</key>
+			<string>r09HVcttxT</string>
+			<key>price</key>
+			<real>6.4500000000000002</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T04:51:51.345Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T04:48:57.166Z</string>
+			<key>description</key>
+			<string>Prosciutto, pineapple, jalapeños, and
+Mozzarella and Provolone cheeses. </string>
+			<key>foodCategory</key>
+			<string>Pizza</string>
+			<key>item</key>
+			<string>Spicy Hawaiian Pizza</string>
+			<key>objectId</key>
+			<string>dOrj722tWq</string>
+			<key>price</key>
+			<real>6.4500000000000002</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T04:51:51.726Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T04:49:05.859Z</string>
+			<key>description</key>
+			<string>Alfredo sauce, chicken, spinach and Mozzarella
+and Provolone cheeses. </string>
+			<key>foodCategory</key>
+			<string>Pizza</string>
+			<key>item</key>
+			<string>Chicken Alfredo Pizza</string>
+			<key>objectId</key>
+			<string>bz34KdpF3b</string>
+			<key>price</key>
+			<real>6.4500000000000002</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T04:51:52.423Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T04:53:15.407Z</string>
+			<key>description</key>
+			<string>Each topping: $0.55-$1.00</string>
+			<key>foodCategory</key>
+			<string>Pizza</string>
+			<key>item</key>
+			<string>Build Your Own Pizza</string>
+			<key>objectId</key>
+			<string>yUrNjvOLJn</string>
+			<key>price</key>
+			<real>5.1500000000000004</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T04:54:20.559Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T04:54:30.163Z</string>
+			<key>description</key>
+			<string>Each Filling: $0.55-$1.00</string>
+			<key>foodCategory</key>
+			<string>Piadina</string>
+			<key>item</key>
+			<string>Build Your Own Piadina</string>
+			<key>objectId</key>
+			<string>XzgDMEUAXm</string>
+			<key>price</key>
+			<integer>3</integer>
+			<key>updatedAt</key>
+			<string>2014-09-27T04:55:27.955Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T04:56:13.429Z</string>
+			<key>description</key>
+			<string>Two quarter pound patties of fresh lean ground
+chuck, two slices of cheese, lettuce, onion,
+tomato and pickle on a toasted bun. $5.95
+single cheeseburger</string>
+			<key>foodCategory</key>
+			<string>American Fare</string>
+			<key>item</key>
+			<string>Char-Grilled Double Cheeseburger</string>
+			<key>objectId</key>
+			<string>LSuViquDZK</string>
+			<key>price</key>
+			<real>4.7999999999999998</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T04:58:42.848Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T04:56:39.513Z</string>
+			<key>description</key>
+			<string>Marinated grilled chicken breast, lettuce, onion, tomato
+and pickle on a toasted bun. </string>
+			<key>foodCategory</key>
+			<string>American Fare</string>
+			<key>item</key>
+			<string>Reckers’ Char-Grilled Chicken Breast</string>
+			<key>objectId</key>
+			<string>e9NnAobQxa</string>
+			<key>price</key>
+			<real>4.9500000000000002</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T04:58:52.548Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T04:56:46.211Z</string>
+			<key>description</key>
+			<string>Char-grilled marinated portabella, lettuce, tomato,
+red onion and pickle on a toasted bun. </string>
+			<key>foodCategory</key>
+			<string>American Fare</string>
+			<key>item</key>
+			<string>Grilled Portabella Sandwich</string>
+			<key>objectId</key>
+			<string>qOw8jCt23v</string>
+			<key>price</key>
+			<real>4.75</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T04:58:55.173Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T04:56:17.675Z</string>
+			<key>description</key>
+			<string>Our quarter pound patty topped with cheddar cheese,
+bacon, onion rings and BBQ sauce.</string>
+			<key>foodCategory</key>
+			<string>American Fare</string>
+			<key>item</key>
+			<string>Backyard Burger</string>
+			<key>objectId</key>
+			<string>cFg03X6h4t</string>
+			<key>price</key>
+			<real>5.9500000000000002</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T04:58:50.295Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T04:56:26.312Z</string>
+			<key>description</key>
+			<string>Our quarter pound patty topped with cheddar cheese,
+jalapeños and peanut butter. </string>
+			<key>foodCategory</key>
+			<string>American Fare</string>
+			<key>item</key>
+			<string>PBJ Burger</string>
+			<key>objectId</key>
+			<string>9TmHpqYK8W</string>
+			<key>price</key>
+			<real>5.5499999999999998</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T04:58:51.546Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T04:59:57.307Z</string>
+			<key>foodCategory</key>
+			<string>Sides</string>
+			<key>item</key>
+			<string>Fries</string>
+			<key>objectId</key>
+			<string>uKM7J3KwRN</string>
+			<key>price</key>
+			<real>1.6499999999999999</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T05:02:31.251Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T05:00:02.161Z</string>
+			<key>foodCategory</key>
+			<string>Sides</string>
+			<key>item</key>
+			<string>Cheese Fries</string>
+			<key>objectId</key>
+			<string>ZmfYbTwYV0</string>
+			<key>price</key>
+			<real>2.3500000000000001</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T05:02:36.162Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T05:00:11.706Z</string>
+			<key>foodCategory</key>
+			<string>Sides</string>
+			<key>item</key>
+			<string>Fresh Nachos With Cheese</string>
+			<key>objectId</key>
+			<string>QvbJgumsQg</string>
+			<key>price</key>
+			<real>2.25</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T05:02:36.988Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T05:00:14.658Z</string>
+			<key>foodCategory</key>
+			<string>Sides</string>
+			<key>item</key>
+			<string>Onion Rings</string>
+			<key>objectId</key>
+			<string>MaQS6Z3GUC</string>
+			<key>price</key>
+			<real>1.8500000000000001</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T05:02:37.634Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T05:00:20.118Z</string>
+			<key>foodCategory</key>
+			<string>Sides</string>
+			<key>item</key>
+			<string>Stuffed Pretzel</string>
+			<key>objectId</key>
+			<string>FNPD54LbYw</string>
+			<key>price</key>
+			<real>3.1499999999999999</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T05:02:38.357Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T05:00:25.688Z</string>
+			<key>foodCategory</key>
+			<string>Sides</string>
+			<key>item</key>
+			<string>Fresh Fruit Cup</string>
+			<key>objectId</key>
+			<string>R3Kd0YdfXt</string>
+			<key>price</key>
+			<real>1.5900000000000001</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T05:02:39.069Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T05:00:33.575Z</string>
+			<key>foodCategory</key>
+			<string>Sides</string>
+			<key>item</key>
+			<string>Piadina and Hummus</string>
+			<key>objectId</key>
+			<string>zMCl4nGd7c</string>
+			<key>price</key>
+			<real>2.25</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T05:02:39.746Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T05:00:47.164Z</string>
+			<key>foodCategory</key>
+			<string>Sides</string>
+			<key>item</key>
+			<string>Soup of the Day (12oz)</string>
+			<key>objectId</key>
+			<string>nOoOFchUwP</string>
+			<key>price</key>
+			<real>2.9500000000000002</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T05:02:40.453Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T05:01:00.696Z</string>
+			<key>foodCategory</key>
+			<string>Sides</string>
+			<key>item</key>
+			<string>Ranch, Pesto, or Buffalo Sauce</string>
+			<key>objectId</key>
+			<string>nAiFYkBVRD</string>
+			<key>price</key>
+			<real>0.55000000000000004</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T05:02:41.103Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T05:01:07.030Z</string>
+			<key>foodCategory</key>
+			<string>Sides</string>
+			<key>item</key>
+			<string>Nacho Cheese Sauce</string>
+			<key>objectId</key>
+			<string>A90gGy7plQ</string>
+			<key>price</key>
+			<real>0.75</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T05:02:41.769Z</string>
+		</dict>
+		<dict>
+			<key>createdAt</key>
+			<string>2014-09-27T05:01:35.993Z</string>
+			<key>foodCategory</key>
+			<string>Sides</string>
+			<key>item</key>
+			<string>Bread Bowl</string>
+			<key>objectId</key>
+			<string>F3vihyvCOO</string>
+			<key>price</key>
+			<real>1.49</real>
+			<key>updatedAt</key>
+			<string>2014-09-27T05:02:42.498Z</string>
+		</dict>
+	</array>
+</dict>
+</plist>
