@@ -10,4 +10,17 @@
 
 @implementation Food
 
+- (instancetype)initWithName:(NSString *)name Price:(NSNumber *)price Description:(NSString *)subtext Category:(NSString *)category {
+	self = [super init];
+	self.name = name;
+	self.price = price;
+	self.subtext = subtext;
+	self.category = category;
+	return self;
+}
+
++ (NSString *)category {
+	return self.category;
+}
+
 @end

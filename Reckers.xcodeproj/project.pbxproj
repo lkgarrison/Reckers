@@ -24,11 +24,12 @@
 		4A80279D19D69020001D8C64 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A80279C19D69020001D8C64 /* Bolts.framework */; };
 		4A8027A319D69BC8001D8C64 /* CollapsibleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8027A219D69BC8001D8C64 /* CollapsibleTableViewController.m */; };
 		4A8027A919D6CD4E001D8C64 /* SectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8027A819D6CD4E001D8C64 /* SectionHeaderView.m */; };
-		4A8027AC19D6D4EF001D8C64 /* FoodType.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8027AB19D6D4EF001D8C64 /* FoodType.m */; };
 		4A8027B019D6D577001D8C64 /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8027AF19D6D577001D8C64 /* Food.m */; };
 		4A8027B319D6D6FF001D8C64 /* SectionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8027B219D6D6FF001D8C64 /* SectionInfo.m */; };
 		4A8027B619D6DCDD001D8C64 /* FoodCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8027B519D6DCDD001D8C64 /* FoodCell.m */; };
 		4A8027BA19D6F2AB001D8C64 /* ReckersTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8027B919D6F2AB001D8C64 /* ReckersTabBarController.m */; };
+		4A8027BD19D72A91001D8C64 /* FoodType.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8027BC19D72A91001D8C64 /* FoodType.m */; };
+		4A8027C319D755CE001D8C64 /* Menu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A8027C219D755CE001D8C64 /* Menu.plist */; };
 		FBC36FBC19D68BE700A0B61D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC36FBB19D68BE700A0B61D /* main.m */; };
 		FBC36FBF19D68BE700A0B61D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC36FBE19D68BE700A0B61D /* AppDelegate.m */; };
 		FBC36FC519D68BE700A0B61D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC36FC319D68BE700A0B61D /* Main.storyboard */; };
@@ -72,8 +73,6 @@
 		4A8027A219D69BC8001D8C64 /* CollapsibleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollapsibleTableViewController.m; sourceTree = "<group>"; };
 		4A8027A719D6CD4E001D8C64 /* SectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionHeaderView.h; sourceTree = "<group>"; };
 		4A8027A819D6CD4E001D8C64 /* SectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionHeaderView.m; sourceTree = "<group>"; };
-		4A8027AA19D6D4EF001D8C64 /* FoodType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodType.h; sourceTree = "<group>"; };
-		4A8027AB19D6D4EF001D8C64 /* FoodType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodType.m; sourceTree = "<group>"; };
 		4A8027AE19D6D577001D8C64 /* Food.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Food.h; sourceTree = "<group>"; };
 		4A8027AF19D6D577001D8C64 /* Food.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Food.m; sourceTree = "<group>"; };
 		4A8027B119D6D6FF001D8C64 /* SectionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionInfo.h; sourceTree = "<group>"; };
@@ -82,6 +81,9 @@
 		4A8027B519D6DCDD001D8C64 /* FoodCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodCell.m; sourceTree = "<group>"; };
 		4A8027B819D6F2AB001D8C64 /* ReckersTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReckersTabBarController.h; sourceTree = "<group>"; };
 		4A8027B919D6F2AB001D8C64 /* ReckersTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReckersTabBarController.m; sourceTree = "<group>"; };
+		4A8027BB19D72A91001D8C64 /* FoodType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodType.h; sourceTree = "<group>"; };
+		4A8027BC19D72A91001D8C64 /* FoodType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodType.m; sourceTree = "<group>"; };
+		4A8027C219D755CE001D8C64 /* Menu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Menu.plist; sourceTree = "<group>"; };
 		FBC36FB619D68BE600A0B61D /* Reckers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reckers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC36FBA19D68BE700A0B61D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBC36FBB19D68BE700A0B61D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -159,8 +161,8 @@
 		4A8027AD19D6D53B001D8C64 /* Model Classes */ = {
 			isa = PBXGroup;
 			children = (
-				4A8027AA19D6D4EF001D8C64 /* FoodType.h */,
-				4A8027AB19D6D4EF001D8C64 /* FoodType.m */,
+				4A8027BB19D72A91001D8C64 /* FoodType.h */,
+				4A8027BC19D72A91001D8C64 /* FoodType.m */,
 				4A8027AE19D6D577001D8C64 /* Food.h */,
 				4A8027AF19D6D577001D8C64 /* Food.m */,
 			);
@@ -223,6 +225,7 @@
 				FBC36FC319D68BE700A0B61D /* Main.storyboard */,
 				FBC36FC619D68BE700A0B61D /* Images.xcassets */,
 				FBC36FC819D68BE700A0B61D /* LaunchScreen.xib */,
+				4A8027C219D755CE001D8C64 /* Menu.plist */,
 				FBC36FB919D68BE700A0B61D /* Supporting Files */,
 			);
 			path = Reckers;
@@ -335,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBC36FC519D68BE700A0B61D /* Main.storyboard in Resources */,
+				4A8027C319D755CE001D8C64 /* Menu.plist in Resources */,
 				FBC36FCA19D68BE700A0B61D /* LaunchScreen.xib in Resources */,
 				FBC36FC719D68BE700A0B61D /* Images.xcassets in Resources */,
 			);
@@ -364,8 +368,8 @@
 				4A8027B619D6DCDD001D8C64 /* FoodCell.m in Sources */,
 				FBFEF6FD19D72B7F00BD1099 /* ReckersViewController.m in Sources */,
 				FBC36FBC19D68BE700A0B61D /* main.m in Sources */,
-				4A8027AC19D6D4EF001D8C64 /* FoodType.m in Sources */,
 				4A8027A919D6CD4E001D8C64 /* SectionHeaderView.m in Sources */,
+				4A8027BD19D72A91001D8C64 /* FoodType.m in Sources */,
 				4A80278019D68DD2001D8C64 /* ReckersLoginViewController.m in Sources */,
 				4A8027BA19D6F2AB001D8C64 /* ReckersTabBarController.m in Sources */,
 			);

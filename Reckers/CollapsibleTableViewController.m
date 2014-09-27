@@ -8,9 +8,10 @@
 
 #import "CollapsibleTableViewController.h"
 #import <Parse/Parse.h>
-#import "FoodType.h"
 #import "FoodCell.h"
 #import "SectionInfo.h"
+#import "FoodType.h"
+#import "Food.h"
 
 @interface CollapsibleTableViewController ()
 @property (nonatomic) NSIndexPath *indexPath;
@@ -38,22 +39,70 @@ static int CELL_HEIGHT = 88;
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
 	/*
+	if (_foodTypes == nil) {
+		NSString *url = [[NSBundle mainBundle] pathForResource:@"Menu" ofType:@"plist"];
+		NSArray *foodTypesDictionariesArray = [[NSArray alloc] initWithContentsOfFile:url];
+		_Sides = [[NSMutableArray alloc] init];
+		_AmericanFare = [[NSMutableArray alloc] init];
+		_Piadina = [[NSMutableArray alloc] init];
+		_Pizza = [[NSMutableArray alloc] init];
+		_Salad = [[NSMutableArray alloc] init];
+		_Breakfast = [[NSMutableArray alloc] init];
+		_foodTypes = [NSMutableArray arrayWithCapacity:[foodTypesDictionariesArray count]];
+		
+		for (NSDictionary *foodTypeDictionary in foodTypesDictionariesArray) {
+			Food *food = [[Food alloc] init];
+			food.name = foodTypeDictionary[@"foodCategory"];
+			if ([food.name isEqualToString:@"Breakfast"]) {
+				[self.Breakfast addObject:food];
+			} else if ([food.name isEqualToString:@"Salad"]) {
+				[self.Salad addObject:food];
+			} else if ([food.name isEqualToString:@"Pizza"]) {
+				[self.Pizza addObject:food];
+			} else if ([food.name isEqualToString:@"Piadanas"]) {
+				[self.Piadina addObject:food];
+			} else if ([food.name isEqualToString:@"American Fare"]) {
+				[self.AmericanFare addObject:food];
+			} else if ([food.name isEqualToString:@"Sides"]) {
+				[self.Sides addObject:food];
+			}
+			[_foodTypes addObject:food];
+		}
+	}
+	
+	*/
 	// Check if user has signed in
 	if (![PFUser currentUser]) {
 		[self dismissViewControllerAnimated:YES completion:^(void) {
 			[self performSegueWithIdentifier:@"gotoLogin" sender:self];
 		}];
-	}*/
+	}
 	
 	// Send request for menu
 	PFQuery *query = [PFQuery queryWithClassName:@"Menu"];
 	[query selectKeys:@[@"foodCategory", @"item", @"price", @"description"]];
 	NSArray *queryResponse = [query findObjects:nil]; // Receive PFObjects
-	NSMutableArray *foodTypes = [[NSMutableArray alloc] initWithCapacity:[queryResponse count]];
-	/*for (PFObject *object in queryResponse) {
-		if (!self.[object objectForKey:@"foodCaegory"])
-	}*/
-	//NSLog(@"%@", [self.foodTypes description]);
+	self.foodTypes = [[NSMutableArray alloc] initWithCapacity:[queryResponse count]];
+	
+	for (PFObject *object in queryResponse) {
+		Food *newFood = [[Food alloc]initWithName:[object objectForKey:@"item"]
+											Price:[object objectForKey:@"price"]
+									  Description:[object objectForKey:@"description"]
+										 Category:[object objectForKey:@"foodCategory"]];
+		//FoodType *newFoodType = [[FoodType alloc] initWithName:[object objectForKey:@"foodCategory"] Food:newFood];
+		if (![self.foodTypes containsObject:[object objectForKey:@"foodCategory"]]) {
+			// Create new food category if none exists
+			[self.foodTypes addObject:[object objectForKey:@"foodCategory"]];
+		} else {
+			// Add food to existing catagories
+			for (NSInteger i = 0; i < [self.foodTypes count]; ++i) {
+				if ([[self.foodTypes[i] category] isEqualToString:[newFood category]]) {
+					[self.foodTypes[i] addObject:newFood];
+					break;
+				}
+			}
+		}
+	}
 	
 	if ((self.sectionInfoArray == nil) ||
 		([self.sectionInfoArray count] != [self numberOfSectionsInTableView:self.tableView])) {
@@ -112,13 +161,12 @@ static int CELL_HEIGHT = 88;
 	return sectionInfo.open ? numCellsInSection : 0;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	static NSString *FoodCellIdentifier = @"FoodCellIdentifier";
 	
     FoodCell *cell = [tableView dequeueReusableCellWithIdentifier:FoodCellIdentifier];
     
-	FoodType *foodType = [(self.sectionInfoArray)[indexPath.section] foodType];
+	FoodType *foodType = (FoodType *)[(self.sectionInfoArray)[indexPath.section] food];
 	cell.food = (foodType.foods)[indexPath.row];
 	
 	return cell;
@@ -147,7 +195,7 @@ static int CELL_HEIGHT = 88;
 	sectionInfo.open = YES;
 	
 	// Create an array containing the index paths of the rows to be inserted
-	NSInteger rowsToInsertCount = [sectionInfo.foodType.foods count];
+	NSInteger rowsToInsertCount = [[sectionInfo.foodType foods] count];
 	NSMutableArray *indexPathsToInsert = [[NSMutableArray alloc] init];
 	for (NSInteger i = 0; i < rowsToInsertCount; ++i) {
 		[indexPathsToInsert addObject:[NSIndexPath indexPathForRow:i inSection:section]];
