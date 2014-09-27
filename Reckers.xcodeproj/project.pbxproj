@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A80278019D68DD2001D8C64 /* DefaultSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A80277F19D68DD2001D8C64 /* DefaultSettingsViewController.m */; };
+		4A80278019D68DD2001D8C64 /* ReckersLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A80277F19D68DD2001D8C64 /* ReckersLoginViewController.m */; };
 		4A80278219D68EA2001D8C64 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A80278119D68EA2001D8C64 /* Parse.framework */; };
 		4A80278519D68EDB001D8C64 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A80278419D68EDB001D8C64 /* AudioToolbox.framework */; };
 		4A80278719D68EE2001D8C64 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A80278619D68EE2001D8C64 /* CFNetwork.framework */; };
@@ -22,7 +22,12 @@
 		4A80279919D68F76001D8C64 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A80279819D68F76001D8C64 /* Accounts.framework */; };
 		4A80279B19D68FCA001D8C64 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A80279A19D68FCA001D8C64 /* Social.framework */; };
 		4A80279D19D69020001D8C64 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A80279C19D69020001D8C64 /* Bolts.framework */; };
-		4A8027A019D69744001D8C64 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A80279F19D69744001D8C64 /* LoginViewController.m */; };
+		4A8027A319D69BC8001D8C64 /* CollapsibleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8027A219D69BC8001D8C64 /* CollapsibleTableViewController.m */; };
+		4A8027A919D6CD4E001D8C64 /* SectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8027A819D6CD4E001D8C64 /* SectionHeaderView.m */; };
+		4A8027AC19D6D4EF001D8C64 /* FoodType.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8027AB19D6D4EF001D8C64 /* FoodType.m */; };
+		4A8027B019D6D577001D8C64 /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8027AF19D6D577001D8C64 /* Food.m */; };
+		4A8027B319D6D6FF001D8C64 /* SectionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8027B219D6D6FF001D8C64 /* SectionInfo.m */; };
+		4A8027B619D6DCDD001D8C64 /* FoodCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8027B519D6DCDD001D8C64 /* FoodCell.m */; };
 		FBC36FBC19D68BE700A0B61D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC36FBB19D68BE700A0B61D /* main.m */; };
 		FBC36FBF19D68BE700A0B61D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC36FBE19D68BE700A0B61D /* AppDelegate.m */; };
 		FBC36FC519D68BE700A0B61D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC36FC319D68BE700A0B61D /* Main.storyboard */; };
@@ -42,8 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4A80277E19D68DD2001D8C64 /* DefaultSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultSettingsViewController.h; sourceTree = "<group>"; };
-		4A80277F19D68DD2001D8C64 /* DefaultSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultSettingsViewController.m; sourceTree = "<group>"; };
+		4A80277E19D68DD2001D8C64 /* ReckersLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReckersLoginViewController.h; sourceTree = "<group>"; };
+		4A80277F19D68DD2001D8C64 /* ReckersLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReckersLoginViewController.m; sourceTree = "<group>"; };
 		4A80278119D68EA2001D8C64 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		4A80278419D68EDB001D8C64 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4A80278619D68EE2001D8C64 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -58,8 +63,18 @@
 		4A80279819D68F76001D8C64 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		4A80279A19D68FCA001D8C64 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		4A80279C19D69020001D8C64 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		4A80279E19D69744001D8C64 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		4A80279F19D69744001D8C64 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		4A8027A119D69BC8001D8C64 /* CollapsibleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollapsibleTableViewController.h; sourceTree = "<group>"; };
+		4A8027A219D69BC8001D8C64 /* CollapsibleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollapsibleTableViewController.m; sourceTree = "<group>"; };
+		4A8027A719D6CD4E001D8C64 /* SectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionHeaderView.h; sourceTree = "<group>"; };
+		4A8027A819D6CD4E001D8C64 /* SectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionHeaderView.m; sourceTree = "<group>"; };
+		4A8027AA19D6D4EF001D8C64 /* FoodType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodType.h; sourceTree = "<group>"; };
+		4A8027AB19D6D4EF001D8C64 /* FoodType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodType.m; sourceTree = "<group>"; };
+		4A8027AE19D6D577001D8C64 /* Food.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Food.h; sourceTree = "<group>"; };
+		4A8027AF19D6D577001D8C64 /* Food.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Food.m; sourceTree = "<group>"; };
+		4A8027B119D6D6FF001D8C64 /* SectionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionInfo.h; sourceTree = "<group>"; };
+		4A8027B219D6D6FF001D8C64 /* SectionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionInfo.m; sourceTree = "<group>"; };
+		4A8027B419D6DCDD001D8C64 /* FoodCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodCell.h; sourceTree = "<group>"; };
+		4A8027B519D6DCDD001D8C64 /* FoodCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodCell.m; sourceTree = "<group>"; };
 		FBC36FB619D68BE600A0B61D /* Reckers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reckers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC36FBA19D68BE700A0B61D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBC36FBB19D68BE700A0B61D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -126,6 +141,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4A8027AD19D6D53B001D8C64 /* Model Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4A8027AA19D6D4EF001D8C64 /* FoodType.h */,
+				4A8027AB19D6D4EF001D8C64 /* FoodType.m */,
+				4A8027AE19D6D577001D8C64 /* Food.h */,
+				4A8027AF19D6D577001D8C64 /* Food.m */,
+			);
+			name = "Model Classes";
+			sourceTree = "<group>";
+		};
+		4A8027B719D6E8F4001D8C64 /* Table Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4A8027A719D6CD4E001D8C64 /* SectionHeaderView.h */,
+				4A8027A819D6CD4E001D8C64 /* SectionHeaderView.m */,
+				4A8027B119D6D6FF001D8C64 /* SectionInfo.h */,
+				4A8027B219D6D6FF001D8C64 /* SectionInfo.m */,
+				4A8027B419D6DCDD001D8C64 /* FoodCell.h */,
+				4A8027B519D6DCDD001D8C64 /* FoodCell.m */,
+			);
+			name = "Table Classes";
+			sourceTree = "<group>";
+		};
 		FBC36FAD19D68BE600A0B61D = {
 			isa = PBXGroup;
 			children = (
@@ -148,10 +187,12 @@
 		FBC36FB819D68BE600A0B61D /* Reckers */ = {
 			isa = PBXGroup;
 			children = (
-				4A80279E19D69744001D8C64 /* LoginViewController.h */,
-				4A80279F19D69744001D8C64 /* LoginViewController.m */,
-				4A80277E19D68DD2001D8C64 /* DefaultSettingsViewController.h */,
-				4A80277F19D68DD2001D8C64 /* DefaultSettingsViewController.m */,
+				4A80277E19D68DD2001D8C64 /* ReckersLoginViewController.h */,
+				4A80277F19D68DD2001D8C64 /* ReckersLoginViewController.m */,
+				4A8027A119D69BC8001D8C64 /* CollapsibleTableViewController.h */,
+				4A8027A219D69BC8001D8C64 /* CollapsibleTableViewController.m */,
+				4A8027B719D6E8F4001D8C64 /* Table Classes */,
+				4A8027AD19D6D53B001D8C64 /* Model Classes */,
 				FBC36FBD19D68BE700A0B61D /* AppDelegate.h */,
 				FBC36FBE19D68BE700A0B61D /* AppDelegate.m */,
 				FBC36FC319D68BE700A0B61D /* Main.storyboard */,
@@ -288,10 +329,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A8027A019D69744001D8C64 /* LoginViewController.m in Sources */,
+				4A8027A319D69BC8001D8C64 /* CollapsibleTableViewController.m in Sources */,
+				4A8027B319D6D6FF001D8C64 /* SectionInfo.m in Sources */,
+				4A8027B019D6D577001D8C64 /* Food.m in Sources */,
 				FBC36FBF19D68BE700A0B61D /* AppDelegate.m in Sources */,
+				4A8027B619D6DCDD001D8C64 /* FoodCell.m in Sources */,
 				FBC36FBC19D68BE700A0B61D /* main.m in Sources */,
-				4A80278019D68DD2001D8C64 /* DefaultSettingsViewController.m in Sources */,
+				4A8027AC19D6D4EF001D8C64 /* FoodType.m in Sources */,
+				4A8027A919D6CD4E001D8C64 /* SectionHeaderView.m in Sources */,
+				4A80278019D68DD2001D8C64 /* ReckersLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

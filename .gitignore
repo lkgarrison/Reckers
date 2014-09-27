@@ -6,3 +6,5 @@
 *.xcuserstate
 
 Reckers.xcodeproj/xcuserdata/DavidWu.xcuserdatad/xcschemes/xcschememanagement.plist
+
+.DS_Store

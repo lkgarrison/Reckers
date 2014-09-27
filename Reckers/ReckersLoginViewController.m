@@ -6,20 +6,17 @@
 //  Copyright (c) 2014 Luke Garrison. All rights reserved.
 //
 
-#import "DefaultSettingsViewController.h"
-#import "LoginViewController.h"
+#import "ReckersLoginViewController.h"
+#import "CollapsibleTableViewController.h"
 
-@interface DefaultSettingsViewController ()
+@interface ReckersLoginViewController ()
 
 @end
 
-@implementation DefaultSettingsViewController
+@implementation ReckersLoginViewController
 
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
-	if ([PFUser currentUser]) {
-		self.welcomeLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Welcome %@!", nil), [[PFUser currentUser] username]];
-	}
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -27,14 +24,13 @@
 	
 	if (![PFUser currentUser]) { // No user logged in
 		// Create the log in view controller
-		LoginViewController *myLoginViewController = [[LoginViewController alloc] init];
+		PFLogInViewController *myLoginViewController = [[PFLogInViewController alloc] init];
 		myLoginViewController.fields = PFLogInFieldsUsernameAndPassword | PFLogInFieldsLogInButton;
 		[myLoginViewController setDelegate:self]; // Set ourselves as the delegate
 		
 		// Present the log in view controller
 		[self presentViewController:myLoginViewController animated:YES completion:NULL];
 	}
-	
 }
 
 - (BOOL)logInViewController:(PFLogInViewController *)logInController shouldBeginLogInWithUsername:(NSString *)username password:(NSString *)password {
@@ -43,28 +39,29 @@
 		return YES; // Begin login process
 	}
 	
-	[[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Missing Information", nil) message:NSLocalizedString(@"Make sure you fill out all of the information!", nil) delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", nil) otherButtonTitles:nil] show];
+	[[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Missing Information", nil) message:NSLocalizedString(@"Please enter your netID and password.", nil) delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", nil) otherButtonTitles:nil] show];
 	return NO; // Interrupt login process
 }
 
 // Sent to the delegate when a PFUser is logged in.
 - (void)logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user {
-	[self dismissViewControllerAnimated:YES completion:NULL];
+	NSLog(@"Logged in.");
+	//[self dismissViewControllerAnimated:YES completion:NULL];
+	/*[self dismissViewControllerAnimated:YES completion:^(void) {
+		[self performSegueWithIdentifier:@"gotoMenu"
+								  sender:self];
+	}];*/
+//	CollapsibleTableViewController *menuViewController = [[CollapsibleTableViewController alloc] init];
 }
 
 // Sent to the delegate when the log in attempt fails.
 - (void)logInViewController:(PFLogInViewController *)logInController didFailToLogInWithError:(NSError *)error {
-	NSLog(@"Failed to log in...");
+	NSLog(@"Failed to log in.");
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)logOutButtonTapAction:(id)sender {
-	[PFUser logOut];
-	[self.navigationController popViewControllerAnimated:YES];
 }
 
 /*
