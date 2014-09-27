@@ -18,31 +18,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="1kJ-sR-nM7" kind="presentation" identifier="gotoMenu" id="NHX-cF-yKK"/>
+                        <segue destination="K29-2k-g8W" kind="presentation" identifier="gotoMenu" id="XZq-bP-Ch0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="612" y="-337"/>
-        </scene>
-        <!--Reckers Tab Bar Controller-->
-        <scene sceneID="CvL-LQ-Tom">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="1kJ-sR-nM7" customClass="ReckersTabBarController" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="N4j-LH-rW9"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="lKX-PD-RWq">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="K29-2k-g8W" kind="relationship" relationship="viewControllers" id="Zby-ZC-inS"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="U7b-UO-zsD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1302" y="-337"/>
         </scene>
         <!--Item-->
         <scene sceneID="9DA-CE-rfU">
@@ -69,7 +50,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BCx-gx-sVq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1980" y="-337"/>
+            <point key="canvasLocation" x="1448" y="-337"/>
         </scene>
     </scenes>
 </document>

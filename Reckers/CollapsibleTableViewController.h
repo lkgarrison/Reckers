@@ -11,6 +11,6 @@
 
 @interface CollapsibleTableViewController : UITableViewController <SectionHeaderViewDelegate>
 
-@property (nonatomic) NSArray *foodTypes;
+@property (nonatomic) NSMutableArray *foodTypes; // Of FoodType
 
 @end

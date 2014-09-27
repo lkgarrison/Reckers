@@ -11,6 +11,6 @@
 @interface FoodType : NSObject
 
 @property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSArray *foods;
+@property (nonatomic, strong) NSArray *foods; // Of Food
 
 @end
