@@ -36,6 +36,10 @@
 		FBC36FC719D68BE700A0B61D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC36FC619D68BE700A0B61D /* Images.xcassets */; };
 		FBC36FCA19D68BE700A0B61D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBC36FC819D68BE700A0B61D /* LaunchScreen.xib */; };
 		FBC36FD619D68BE700A0B61D /* ReckersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC36FD519D68BE700A0B61D /* ReckersTests.m */; };
+		FBFEF6F419D72AA100BD1099 /* OrderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFEF6F319D72AA100BD1099 /* OrderView.m */; };
+		FBFEF6F719D72AAF00BD1099 /* CheckoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFEF6F619D72AAF00BD1099 /* CheckoutView.m */; };
+		FBFEF6FA19D72ABB00BD1099 /* PickupView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFEF6F919D72ABB00BD1099 /* PickupView.m */; };
+		FBFEF6FD19D72B7F00BD1099 /* ReckersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFEF6FC19D72B7F00BD1099 /* ReckersViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +95,14 @@
 		FBC36FCF19D68BE700A0B61D /* ReckersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReckersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC36FD419D68BE700A0B61D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBC36FD519D68BE700A0B61D /* ReckersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReckersTests.m; sourceTree = "<group>"; };
+		FBFEF6F219D72AA100BD1099 /* OrderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderView.h; sourceTree = "<group>"; };
+		FBFEF6F319D72AA100BD1099 /* OrderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderView.m; sourceTree = "<group>"; };
+		FBFEF6F519D72AAF00BD1099 /* CheckoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckoutView.h; sourceTree = "<group>"; };
+		FBFEF6F619D72AAF00BD1099 /* CheckoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckoutView.m; sourceTree = "<group>"; };
+		FBFEF6F819D72ABB00BD1099 /* PickupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickupView.h; sourceTree = "<group>"; };
+		FBFEF6F919D72ABB00BD1099 /* PickupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickupView.m; sourceTree = "<group>"; };
+		FBFEF6FB19D72B7F00BD1099 /* ReckersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReckersViewController.h; sourceTree = "<group>"; };
+		FBFEF6FC19D72B7F00BD1099 /* ReckersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReckersViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +204,14 @@
 		FBC36FB819D68BE600A0B61D /* Reckers */ = {
 			isa = PBXGroup;
 			children = (
+				FBFEF6FB19D72B7F00BD1099 /* ReckersViewController.h */,
+				FBFEF6FC19D72B7F00BD1099 /* ReckersViewController.m */,
+				FBFEF6F219D72AA100BD1099 /* OrderView.h */,
+				FBFEF6F319D72AA100BD1099 /* OrderView.m */,
+				FBFEF6F519D72AAF00BD1099 /* CheckoutView.h */,
+				FBFEF6F619D72AAF00BD1099 /* CheckoutView.m */,
+				FBFEF6F819D72ABB00BD1099 /* PickupView.h */,
+				FBFEF6F919D72ABB00BD1099 /* PickupView.m */,
 				4A80277E19D68DD2001D8C64 /* ReckersLoginViewController.h */,
 				4A80277F19D68DD2001D8C64 /* ReckersLoginViewController.m */,
 				4A8027A119D69BC8001D8C64 /* CollapsibleTableViewController.h */,
@@ -338,11 +358,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBFEF6F419D72AA100BD1099 /* OrderView.m in Sources */,
+				FBFEF6FA19D72ABB00BD1099 /* PickupView.m in Sources */,
 				4A8027A319D69BC8001D8C64 /* CollapsibleTableViewController.m in Sources */,
+				FBFEF6F719D72AAF00BD1099 /* CheckoutView.m in Sources */,
 				4A8027B319D6D6FF001D8C64 /* SectionInfo.m in Sources */,
 				4A8027B019D6D577001D8C64 /* Food.m in Sources */,
 				FBC36FBF19D68BE700A0B61D /* AppDelegate.m in Sources */,
 				4A8027B619D6DCDD001D8C64 /* FoodCell.m in Sources */,
+				FBFEF6FD19D72B7F00BD1099 /* ReckersViewController.m in Sources */,
 				FBC36FBC19D68BE700A0B61D /* main.m in Sources */,
 				4A8027A919D6CD4E001D8C64 /* SectionHeaderView.m in Sources */,
 				4A8027BD19D72A91001D8C64 /* FoodType.m in Sources */,

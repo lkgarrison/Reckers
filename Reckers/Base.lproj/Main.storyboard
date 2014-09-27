@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A361c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Reckers Login View Controller-->
@@ -18,7 +19,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+<<<<<<< HEAD
                         <segue destination="Suk-hr-058" kind="presentation" identifier="gotoMenu" id="XZq-bP-Ch0"/>
+=======
+                        <segue destination="7bW-uE-NKc" kind="presentation" identifier="gotoMenu" id="bbo-No-KWR"/>
+>>>>>>> FETCH_HEAD
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -50,6 +55,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BCx-gx-sVq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="2260" y="-337"/>
         </scene>
         <!--Tab Bar Controller-->
@@ -69,6 +75,90 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wMY-wT-oae" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1448" y="-337"/>
+=======
+            <point key="canvasLocation" x="1586" y="-293"/>
+        </scene>
+        <!--Reckers View Controller-->
+        <scene sceneID="Sts-FN-bcR">
+            <objects>
+                <viewController id="7bW-uE-NKc" customClass="ReckersViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tRU-rd-1Hu"/>
+                        <viewControllerLayoutGuide type="bottom" id="kBE-JX-Y0J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4ur-MO-npA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s2i-5n-4om" userLabel="ProgressBar">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UZl-xX-xal" userLabel="ViewContainerView">
+                                <rect key="frame" x="0.0" y="0.0" width="1800" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w7e-nM-DZX" userLabel="PickupView" customClass="PickupView">
+                                        <rect key="frame" x="1200" y="0.0" width="600" height="600"/>
+                                        <color key="backgroundColor" red="0.31900417434411643" green="0.26987308272192811" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ter-41-SQ3" userLabel="OrderView" customClass="OrderView">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                        <color key="backgroundColor" red="0.47396450677498581" green="1" blue="0.41885832746346829" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wEn-fZ-q2t" userLabel="CheckoutView" customClass="CheckoutView">
+                                        <rect key="frame" x="600" y="-8" width="600" height="600"/>
+                                        <color key="backgroundColor" red="1" green="0.41082045613887608" blue="0.33785073832664414" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="w7e-nM-DZX" secondAttribute="trailing" id="3ai-Je-6HP"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ter-41-SQ3" secondAttribute="bottom" id="4FM-qr-zQV"/>
+                                    <constraint firstAttribute="height" secondItem="Ter-41-SQ3" secondAttribute="height" id="5Ho-bh-k05"/>
+                                    <constraint firstItem="Ter-41-SQ3" firstAttribute="height" secondItem="w7e-nM-DZX" secondAttribute="height" id="BDb-lJ-p9F"/>
+                                    <constraint firstItem="Ter-41-SQ3" firstAttribute="width" secondItem="w7e-nM-DZX" secondAttribute="width" id="Cu7-3j-cfe"/>
+                                    <constraint firstItem="wEn-fZ-q2t" firstAttribute="leading" secondItem="Ter-41-SQ3" secondAttribute="trailing" id="Dts-1x-u3z"/>
+                                    <constraint firstItem="Ter-41-SQ3" firstAttribute="height" secondItem="wEn-fZ-q2t" secondAttribute="height" id="Eyw-gk-Aj3"/>
+                                    <constraint firstItem="Ter-41-SQ3" firstAttribute="top" secondItem="UZl-xX-xal" secondAttribute="top" id="Fug-CT-hu2"/>
+                                    <constraint firstAttribute="height" secondItem="wEn-fZ-q2t" secondAttribute="height" id="Rvx-Cw-cPu"/>
+                                    <constraint firstItem="Ter-41-SQ3" firstAttribute="width" secondItem="wEn-fZ-q2t" secondAttribute="width" id="SaS-zX-r74"/>
+                                    <constraint firstItem="w7e-nM-DZX" firstAttribute="top" secondItem="UZl-xX-xal" secondAttribute="top" id="Vx6-c6-5N6"/>
+                                    <constraint firstAttribute="height" secondItem="Ter-41-SQ3" secondAttribute="height" id="WV5-OS-mbl"/>
+                                    <constraint firstAttribute="bottom" secondItem="w7e-nM-DZX" secondAttribute="bottom" id="czM-sW-jk6"/>
+                                    <constraint firstItem="w7e-nM-DZX" firstAttribute="leading" secondItem="wEn-fZ-q2t" secondAttribute="trailing" id="hQ0-i5-fxz"/>
+                                    <constraint firstAttribute="bottom" secondItem="wEn-fZ-q2t" secondAttribute="bottom" id="jnM-bF-3Dp"/>
+                                    <constraint firstAttribute="height" secondItem="w7e-nM-DZX" secondAttribute="height" id="no0-RT-zcc"/>
+                                    <constraint firstItem="Ter-41-SQ3" firstAttribute="leading" secondItem="UZl-xX-xal" secondAttribute="leading" id="tgH-gf-swi"/>
+                                    <constraint firstItem="wEn-fZ-q2t" firstAttribute="top" secondItem="UZl-xX-xal" secondAttribute="top" id="tsk-fX-LXJ"/>
+                                    <constraint firstAttribute="height" secondItem="wEn-fZ-q2t" secondAttribute="height" id="wKw-iS-qsA"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5Ho-bh-k05"/>
+                                        <exclude reference="BDb-lJ-p9F"/>
+                                        <exclude reference="Eyw-gk-Aj3"/>
+                                        <exclude reference="WV5-OS-mbl"/>
+                                        <exclude reference="wKw-iS-qsA"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UZl-xX-xal" firstAttribute="width" secondItem="4ur-MO-npA" secondAttribute="width" multiplier="3" id="9RD-ge-SNf"/>
+                            <constraint firstItem="UZl-xX-xal" firstAttribute="height" secondItem="4ur-MO-npA" secondAttribute="height" id="QOm-RK-Czj"/>
+                            <constraint firstAttribute="centerY" secondItem="UZl-xX-xal" secondAttribute="centerY" id="kRg-Dk-bOk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="UZl-xX-xal" id="fnw-Yp-jDh"/>
+                        <outlet property="pickupView" destination="w7e-nM-DZX" id="nY4-JP-GKw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yyG-lG-TwG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="955" y="445"/>
+>>>>>>> FETCH_HEAD
         </scene>
     </scenes>
 </document>
