@@ -208,7 +208,8 @@ viewForHeaderInSection:(NSInteger)section {
             [header setBackgroundView:imageView];
         }
             break;
-		case 2:
+            // ...
+        case 2:
             sectionName = NSLocalizedString(@"Piadinas", @"Piadinas");
         {
             NSData *imgData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"3-piadina" ofType:@"png"]];
