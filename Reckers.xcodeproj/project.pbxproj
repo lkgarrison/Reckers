@@ -30,6 +30,13 @@
 		4A8027BD19D72A91001D8C64 /* FoodType.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8027BC19D72A91001D8C64 /* FoodType.m */; };
 		4A8027C319D755CE001D8C64 /* Menu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A8027C219D755CE001D8C64 /* Menu.plist */; };
 		4AE01DFA19D79A1800C4899C /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AE01DF919D79A1800C4899C /* Montserrat-Regular.ttf */; };
+		FB67FD0419D7E2A70099A0F4 /* 1-pizza.png in Resources */ = {isa = PBXBuildFile; fileRef = FB67FD0319D7E2A70099A0F4 /* 1-pizza.png */; };
+		FBAD970D19D7E7B8001F1BA0 /* 2-sandwiches.png in Resources */ = {isa = PBXBuildFile; fileRef = FBAD970C19D7E7B8001F1BA0 /* 2-sandwiches.png */; };
+		FBAD971219D7E82B001F1BA0 /* 6-breakfast.png in Resources */ = {isa = PBXBuildFile; fileRef = FBAD970E19D7E82B001F1BA0 /* 6-breakfast.png */; };
+		FBAD971319D7E82B001F1BA0 /* 4-sides.png in Resources */ = {isa = PBXBuildFile; fileRef = FBAD970F19D7E82B001F1BA0 /* 4-sides.png */; };
+		FBAD971419D7E82B001F1BA0 /* 3-piadina.png in Resources */ = {isa = PBXBuildFile; fileRef = FBAD971019D7E82B001F1BA0 /* 3-piadina.png */; };
+		FBAD971519D7E82B001F1BA0 /* 5-salads.png in Resources */ = {isa = PBXBuildFile; fileRef = FBAD971119D7E82B001F1BA0 /* 5-salads.png */; };
+		FBAD971719D7EBE5001F1BA0 /* 5-PickupScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FBAD971619D7EBE5001F1BA0 /* 5-PickupScreen.png */; };
 		FBC36FBC19D68BE700A0B61D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC36FBB19D68BE700A0B61D /* main.m */; };
 		FBC36FBF19D68BE700A0B61D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC36FBE19D68BE700A0B61D /* AppDelegate.m */; };
 		FBC36FC519D68BE700A0B61D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC36FC319D68BE700A0B61D /* Main.storyboard */; };
@@ -83,6 +90,13 @@
 		4A8027BC19D72A91001D8C64 /* FoodType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodType.m; sourceTree = "<group>"; };
 		4A8027C219D755CE001D8C64 /* Menu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Menu.plist; sourceTree = "<group>"; };
 		4AE01DF919D79A1800C4899C /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		FB67FD0319D7E2A70099A0F4 /* 1-pizza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1-pizza.png"; sourceTree = "<group>"; };
+		FBAD970C19D7E7B8001F1BA0 /* 2-sandwiches.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2-sandwiches.png"; sourceTree = "<group>"; };
+		FBAD970E19D7E82B001F1BA0 /* 6-breakfast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6-breakfast.png"; sourceTree = "<group>"; };
+		FBAD970F19D7E82B001F1BA0 /* 4-sides.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4-sides.png"; sourceTree = "<group>"; };
+		FBAD971019D7E82B001F1BA0 /* 3-piadina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3-piadina.png"; sourceTree = "<group>"; };
+		FBAD971119D7E82B001F1BA0 /* 5-salads.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5-salads.png"; sourceTree = "<group>"; };
+		FBAD971619D7EBE5001F1BA0 /* 5-PickupScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5-PickupScreen.png"; sourceTree = "<group>"; };
 		FBC36FB619D68BE600A0B61D /* Reckers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reckers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC36FBA19D68BE700A0B61D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBC36FBB19D68BE700A0B61D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -203,6 +217,13 @@
 		FBC36FB819D68BE600A0B61D /* Reckers */ = {
 			isa = PBXGroup;
 			children = (
+				FBAD971619D7EBE5001F1BA0 /* 5-PickupScreen.png */,
+				FBAD970E19D7E82B001F1BA0 /* 6-breakfast.png */,
+				FBAD970F19D7E82B001F1BA0 /* 4-sides.png */,
+				FBAD971019D7E82B001F1BA0 /* 3-piadina.png */,
+				FBAD971119D7E82B001F1BA0 /* 5-salads.png */,
+				FBAD970C19D7E7B8001F1BA0 /* 2-sandwiches.png */,
+				FB67FD0319D7E2A70099A0F4 /* 1-pizza.png */,
 				FBFEF6FB19D72B7F00BD1099 /* ReckersViewController.h */,
 				FBFEF6FC19D72B7F00BD1099 /* ReckersViewController.m */,
 				FBFEF6F219D72AA100BD1099 /* OrderView.h */,
@@ -337,9 +358,16 @@
 			files = (
 				FBC36FC519D68BE700A0B61D /* Main.storyboard in Resources */,
 				4A8027C319D755CE001D8C64 /* Menu.plist in Resources */,
+				FBAD971719D7EBE5001F1BA0 /* 5-PickupScreen.png in Resources */,
 				FBC36FCA19D68BE700A0B61D /* LaunchScreen.xib in Resources */,
+				FBAD971219D7E82B001F1BA0 /* 6-breakfast.png in Resources */,
 				4AE01DFA19D79A1800C4899C /* Montserrat-Regular.ttf in Resources */,
+				FBAD970D19D7E7B8001F1BA0 /* 2-sandwiches.png in Resources */,
 				FBC36FC719D68BE700A0B61D /* Images.xcassets in Resources */,
+				FBAD971519D7E82B001F1BA0 /* 5-salads.png in Resources */,
+				FB67FD0419D7E2A70099A0F4 /* 1-pizza.png in Resources */,
+				FBAD971319D7E82B001F1BA0 /* 4-sides.png in Resources */,
+				FBAD971419D7E82B001F1BA0 /* 3-piadina.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

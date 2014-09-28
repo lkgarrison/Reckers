@@ -85,6 +85,11 @@
 			[self.piadinaPrices addObject:foodPrice];
 		}
 	}
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [self orderButtonTapped:nil];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -103,19 +108,19 @@
                 return self.pizzas.count;
 				break;
             case 1:
-                return self.breakfasts.count;
+                return self.american.count;
 				break;
 			case 2:
-				return self.sides.count;
+				return self.piadinas.count;
 				break;
 			case 3:
-				return self.american.count;
+				return self.sides.count;
 				break;
 			case 4:
 				return self.salads.count;
 				break;
 			case 5:
-				return self.piadinas.count;
+				return self.breakfasts.count;
 				break;
             default:
                 return 2;
@@ -136,27 +141,30 @@
         switch (indexPath.section) {
             case 0:
                 cell.textLabel.text = self.pizzas[indexPath.row];
-				//cell.detailTextLabel.text = (NSString *)self.pizzaPrices[indexPath.row];
+				cell.detailTextLabel.text = [NSString stringWithFormat:@"$%@", self.pizzaPrices[indexPath.row]];
                 break;
             case 1:
-                cell.textLabel.text = self.breakfasts[indexPath.row];
-				cell.detailTextLabel.text = [NSString stringWithFormat:@"$%@", self.breakfastPrices[indexPath.row]];
+                cell.textLabel.text = self.american[indexPath.row];
+                cell.detailTextLabel.text = [NSString stringWithFormat:@"$%@", self.americanPrices[indexPath.row]];
+
                 break;
             case 2:
-				cell.textLabel.text = self.sides[indexPath.row];
-				cell.detailTextLabel.text = self.sidePrices[indexPath.row];
+                cell.textLabel.text = self.piadinas[indexPath.row];
+                cell.detailTextLabel.text = [NSString stringWithFormat:@"$%@", self.piadinaPrices[indexPath.row]];
                 break;
             case 3:
-				cell.textLabel.text = self.american[indexPath.row];
-				cell.detailTextLabel.text = self.americanPrices[indexPath.row];
+
+                cell.textLabel.text = self.sides[indexPath.row];
+                cell.detailTextLabel.text = [NSString stringWithFormat:@"$%@", self.sidePrices[indexPath.row]];
                 break;
             case 4:
 				cell.textLabel.text = self.salads[indexPath.row];
-				cell.detailTextLabel.text = self.saladPrices[indexPath.row];
+				cell.detailTextLabel.text = [NSString stringWithFormat:@"$%@", self.saladPrices[indexPath.row]];
                 break;
             case 5:
-				cell.textLabel.text = self.piadinas[indexPath.row];
-				cell.detailTextLabel.text = self.piadinaPrices[indexPath.row];
+                cell.textLabel.text = self.breakfasts[indexPath.row];
+                cell.detailTextLabel.text = [NSString stringWithFormat:@"$%@", self.breakfastPrices[indexPath.row]];
+
                 break;
             default:
                 cell.textLabel.text = @"";
@@ -172,33 +180,71 @@
 viewForHeaderInSection:(NSInteger)section {
     
     UITableViewHeaderFooterView *header = [[UITableViewHeaderFooterView alloc] initWithReuseIdentifier:@"orderHeader"];
-    
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 48)];
+
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(15, 20, tableView.frame.size.width, 48)];
     label.text = @"Header";
 	label.font = [UIFont fontWithName:@"Montserrat-Regular" size:45];
-    
+    label.textColor = [UIColor whiteColor];
+   
     //test
     NSString *sectionName;
     switch (section)
     {
         case 0:
             sectionName = NSLocalizedString(@"Pizza", @"Pizza");
+            {
+                NSData *imgData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"1-pizza" ofType:@"png"]];
+                UIImage *img = [UIImage imageWithData:imgData];
+                UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
+                [header setBackgroundView:imageView];
+            }
             break;
+            
         case 1:
             sectionName = NSLocalizedString(@"Sandwiches", @"Sandwiches");
+        {
+            NSData *imgData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"2-sandwiches" ofType:@"png"]];
+            UIImage *img = [UIImage imageWithData:imgData];
+            UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
+            [header setBackgroundView:imageView];
+        }
             break;
             // ...
         case 2:
             sectionName = NSLocalizedString(@"Piadinas", @"Piadinas");
+        {
+            NSData *imgData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"3-piadina" ofType:@"png"]];
+            UIImage *img = [UIImage imageWithData:imgData];
+            UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
+            [header setBackgroundView:imageView];
+        }
             break;
         case 3:
             sectionName = NSLocalizedString(@"Sides", @"Sides");
+        {
+            NSData *imgData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"4-sides" ofType:@"png"]];
+            UIImage *img = [UIImage imageWithData:imgData];
+            UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
+            [header setBackgroundView:imageView];
+        }
             break;
         case 4:
             sectionName = NSLocalizedString(@"Salads", @"Salads");
+        {
+            NSData *imgData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"5-salads" ofType:@"png"]];
+            UIImage *img = [UIImage imageWithData:imgData];
+            UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
+            [header setBackgroundView:imageView];
+        }
             break;
         case 5:
             sectionName = NSLocalizedString(@"Breakfast", @"Breakfast");
+        {
+            NSData *imgData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"6-breakfast" ofType:@"png"]];
+            UIImage *img = [UIImage imageWithData:imgData];
+            UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
+            [header setBackgroundView:imageView];
+        }
             break;
         default:
             sectionName = @"";
