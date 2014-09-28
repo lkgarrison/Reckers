@@ -32,6 +32,7 @@
 
 @property (nonatomic) NSInteger selectedSection;
 @property (weak, nonatomic) IBOutlet UITableView *collapsibleTable;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *leftContainerConstraint;
 
 @end
 
@@ -277,10 +278,12 @@ viewForHeaderInSection:(NSInteger)section {
 - (IBAction)orderButtonTapped:(UIButton *)sender {
     [UIView animateWithDuration:.5
                      animations:^(void){
-                         self.containerView.frame = CGRectMake(0,
-                                                               self.containerView.frame.origin.y,
-                                                               self.containerView.frame.size.width,
-                                                               self.containerView.frame.size.height);
+//                         self.containerView.frame = CGRectMake(0,
+//                                                               self.containerView.frame.origin.y,
+//                                                               self.containerView.frame.size.width,
+//                                                               self.containerView.frame.size.height);
+                         self.leftContainerConstraint.constant =  -16;
+                         [self.view layoutIfNeeded];
                      }];
     
     
@@ -288,19 +291,24 @@ viewForHeaderInSection:(NSInteger)section {
 - (IBAction)checkoutButtonTapped:(UIButton *)sender {
     [UIView animateWithDuration:.5
                      animations:^(void){
-                         self.containerView.frame = CGRectMake(-self.view.frame.size.width,
-                                          self.containerView.frame.origin.y,
-                                          self.containerView.frame.size.width,
-                                          self.containerView.frame.size.height);
+//                         self.containerView.frame = CGRectMake(-self.view.frame.size.width,
+//                                          self.containerView.frame.origin.y,
+//                                          self.containerView.frame.size.width,
+//                                          self.containerView.frame.size.height);
+                         self.leftContainerConstraint.constant = -self.view.frame.size.width - 16;
+                         [self.view layoutIfNeeded];
                      }];
 }
 - (IBAction)pickupButtonTapped:(UIButton *)sender {
     [UIView animateWithDuration:.5
                      animations:^(void){
-                         self.containerView.frame = CGRectMake(-2*self.view.frame.size.width,
-                                                                              self.containerView.frame.origin.y,
-                                                                              self.containerView.frame.size.width,
-                                                                              self.containerView.frame.size.height);
+//                         self.containerView.frame = CGRectMake(-2*self.view.frame.size.width,
+//                                                                              self.containerView.frame.origin.y,
+//                                                                              self.containerView.frame.size.width,
+//                                                                              self.containerView.frame.size.height);
+                         self.leftContainerConstraint.constant = -2*self.view.frame.size.width - 16;
+                         
+                         [self.view layoutIfNeeded];
                      }];
     
     
@@ -314,9 +322,11 @@ viewForHeaderInSection:(NSInteger)section {
                              withRowAnimation:UITableViewRowAnimationFade];
     } else {
         NSInteger oldSection = self.selectedSection;
+        
         self.selectedSection = tap.view.tag;
         [self.collapsibleTable reloadSections:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, 6)]
-                             withRowAnimation:UITableViewRowAnimationFade];
+                             withRowAnimation:UITableViewRowAnimationFade
+         ];
     }
 }
 

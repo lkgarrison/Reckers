@@ -63,9 +63,6 @@
                                         <variation key="heightClass=regular" ambiguous="YES">
                                             <rect key="frame" x="1200" y="0.0" width="600" height="720"/>
                                         </variation>
-                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                            <rect key="frame" x="1200" y="0.0" width="400" height="520"/>
-                                        </variation>
                                     </view>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ter-41-SQ3" userLabel="OrderView" customClass="OrderView">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="520"/>
@@ -99,9 +96,6 @@
                                                 <variation key="heightClass=regular" ambiguous="YES">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="720"/>
                                                 </variation>
-                                                <variation key="widthClass=compact" ambiguous="YES">
-                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="520"/>
-                                                </variation>
                                             </tableView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.47396450677498581" green="1" blue="0.41885832746346829" alpha="1" colorSpace="calibratedRGB"/>
@@ -113,9 +107,6 @@
                                         </constraints>
                                         <variation key="heightClass=regular" ambiguous="YES">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="720"/>
-                                        </variation>
-                                        <variation key="widthClass=compact" ambiguous="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="400" height="520"/>
                                         </variation>
                                     </view>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wEn-fZ-q2t" userLabel="CheckoutView" customClass="CheckoutView">
@@ -191,8 +182,8 @@
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
                                                 </prototypes>
-                                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                    <rect key="frame" x="50" y="139" width="300" height="260"/>
+                                                <variation key="widthClass=compact" ambiguous="YES">
+                                                    <rect key="frame" x="15" y="75" width="370" height="0.0"/>
                                                 </variation>
                                             </tableView>
                                         </subviews>
@@ -257,8 +248,7 @@
                                         <variation key="heightClass=regular" ambiguous="YES">
                                             <rect key="frame" x="600" y="0.0" width="600" height="720"/>
                                         </variation>
-                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                            <rect key="frame" x="600" y="0.0" width="400" height="520"/>
+                                        <variation key="widthClass=compact">
                                             <mask key="constraints">
                                                 <include reference="3da-9u-GRx"/>
                                             </mask>
@@ -298,9 +288,6 @@
                                 </variation>
                                 <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="-600" y="20" width="1800" height="720"/>
-                                </variation>
-                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="-600" y="20" width="1200" height="520"/>
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WXJ-jD-lXD">
@@ -357,17 +344,25 @@
                             <constraint firstItem="UZl-xX-xal" firstAttribute="top" secondItem="tRU-rd-1Hu" secondAttribute="bottom" id="e48-0n-MsW"/>
                             <constraint firstAttribute="centerY" secondItem="UZl-xX-xal" secondAttribute="centerY" id="kRg-Dk-bOk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="WXJ-jD-lXD" secondAttribute="trailing" constant="-16" id="nzF-kg-bQk"/>
+                            <constraint firstItem="UZl-xX-xal" firstAttribute="leading" secondItem="4ur-MO-npA" secondAttribute="leadingMargin" constant="-16" id="zfG-kH-EUu"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="QOm-RK-Czj"/>
                                 <exclude reference="kRg-Dk-bOk"/>
+                                <exclude reference="zfG-kH-EUu"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="zfG-kH-EUu"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="collapsibleTable" destination="BEY-0f-BNt" id="5Il-VU-lV5"/>
                         <outlet property="containerView" destination="UZl-xX-xal" id="fnw-Yp-jDh"/>
+                        <outlet property="leftContainerConstraint" destination="zfG-kH-EUu" id="pm9-bj-PFu"/>
                         <outlet property="orderView" destination="BEY-0f-BNt" id="qFW-cm-rwc"/>
                     </connections>
                 </viewController>

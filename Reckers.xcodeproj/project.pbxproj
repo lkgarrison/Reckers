@@ -23,8 +23,6 @@
 		4A80279B19D68FCA001D8C64 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A80279A19D68FCA001D8C64 /* Social.framework */; };
 		4A80279D19D69020001D8C64 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A80279C19D69020001D8C64 /* Bolts.framework */; };
 		4A8027C319D755CE001D8C64 /* Menu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A8027C219D755CE001D8C64 /* Menu.plist */; };
-		4AA183A019D7C00700BA8C04 /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA1839F19D7C00700BA8C04 /* SourceSansPro-Regular.ttf */; };
-		4AA183A219D7C0CF00BA8C04 /* SourceSansPro-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA183A119D7C0CF00BA8C04 /* SourceSansPro-Semibold.ttf */; };
 		4AE01DFA19D79A1800C4899C /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AE01DF919D79A1800C4899C /* Montserrat-Regular.ttf */; };
 		FB67FD0419D7E2A70099A0F4 /* 1-pizza.png in Resources */ = {isa = PBXBuildFile; fileRef = FB67FD0319D7E2A70099A0F4 /* 1-pizza.png */; };
 		FBAD970D19D7E7B8001F1BA0 /* 2-sandwiches.png in Resources */ = {isa = PBXBuildFile; fileRef = FBAD970C19D7E7B8001F1BA0 /* 2-sandwiches.png */; };
@@ -285,6 +283,7 @@
 				TargetAttributes = {
 					FBC36FB519D68BE600A0B61D = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = RM2BB7S3BX;
 					};
 					FBC36FCE19D68BE700A0B61D = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -475,6 +474,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -489,6 +489,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

@@ -8,8 +8,8 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
-#import "FoodType.h"
-#import "Food.h"
+//#import "FoodType.h"
+//#import "Food.h"
 
 @interface AppDelegate ()
 @property (nonatomic, strong) NSMutableArray *foodTypes;
