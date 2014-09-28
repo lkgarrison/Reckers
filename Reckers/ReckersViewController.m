@@ -33,7 +33,6 @@
     
     self.titles = @[@"Hello", @"How are you"];
     self.selectedSection = -1;
-    
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -69,8 +68,9 @@ viewForHeaderInSection:(NSInteger)section {
     
     UITableViewHeaderFooterView *header = [[UITableViewHeaderFooterView alloc] initWithReuseIdentifier:@"orderHeader"];
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 17)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 48)];
     label.text = @"Header";
+	label.font = [UIFont fontWithName:@"Montserrat-Regular" size:60];
     
     header.tag = section;
     
@@ -85,7 +85,7 @@ viewForHeaderInSection:(NSInteger)section {
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 20;
+    return 88;
 }
 
 

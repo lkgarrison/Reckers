@@ -29,6 +29,7 @@
 		4A8027B619D6DCDD001D8C64 /* FoodCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8027B519D6DCDD001D8C64 /* FoodCell.m */; };
 		4A8027BD19D72A91001D8C64 /* FoodType.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8027BC19D72A91001D8C64 /* FoodType.m */; };
 		4A8027C319D755CE001D8C64 /* Menu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A8027C219D755CE001D8C64 /* Menu.plist */; };
+		4AE01DFA19D79A1800C4899C /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AE01DF919D79A1800C4899C /* Montserrat-Regular.ttf */; };
 		FBC36FBC19D68BE700A0B61D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC36FBB19D68BE700A0B61D /* main.m */; };
 		FBC36FBF19D68BE700A0B61D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC36FBE19D68BE700A0B61D /* AppDelegate.m */; };
 		FBC36FC519D68BE700A0B61D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC36FC319D68BE700A0B61D /* Main.storyboard */; };
@@ -81,6 +82,7 @@
 		4A8027BB19D72A91001D8C64 /* FoodType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodType.h; sourceTree = "<group>"; };
 		4A8027BC19D72A91001D8C64 /* FoodType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodType.m; sourceTree = "<group>"; };
 		4A8027C219D755CE001D8C64 /* Menu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Menu.plist; sourceTree = "<group>"; };
+		4AE01DF919D79A1800C4899C /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		FBC36FB619D68BE600A0B61D /* Reckers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reckers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC36FBA19D68BE700A0B61D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBC36FBB19D68BE700A0B61D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 				FBC36FC619D68BE700A0B61D /* Images.xcassets */,
 				FBC36FC819D68BE700A0B61D /* LaunchScreen.xib */,
 				4A8027C219D755CE001D8C64 /* Menu.plist */,
+				4AE01DF919D79A1800C4899C /* Montserrat-Regular.ttf */,
 				FBC36FB919D68BE700A0B61D /* Supporting Files */,
 			);
 			path = Reckers;
@@ -335,6 +338,7 @@
 				FBC36FC519D68BE700A0B61D /* Main.storyboard in Resources */,
 				4A8027C319D755CE001D8C64 /* Menu.plist in Resources */,
 				FBC36FCA19D68BE700A0B61D /* LaunchScreen.xib in Resources */,
+				4AE01DFA19D79A1800C4899C /* Montserrat-Regular.ttf in Resources */,
 				FBC36FC719D68BE700A0B61D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
