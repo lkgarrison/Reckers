@@ -10,7 +10,6 @@
 #import <Parse/Parse.h>
 #import "FoodType.h"
 #import "Food.h"
-#import "CollapsibleTableViewController.h"
 
 @interface AppDelegate ()
 @property (nonatomic, strong) NSMutableArray *foodTypes;

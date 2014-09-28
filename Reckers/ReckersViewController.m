@@ -64,7 +64,6 @@
 		NSString *foodType = [foodDict objectForKey:@"foodCategory"];
 		NSString *foodName = [foodDict objectForKey:@"item"];
 		NSNumber *foodPrice = [foodDict objectForKey:@"price"];
-		NSLog(@"%@", foodType);
 		if ([foodType isEqualToString:@"Pizza"]) {
 			[self.pizzas addObject:foodName];
 			[self.pizzaPrices addObject:foodPrice];
@@ -209,8 +208,7 @@ viewForHeaderInSection:(NSInteger)section {
             [header setBackgroundView:imageView];
         }
             break;
-            // ...
-        case 2:
+		case 2:
             sectionName = NSLocalizedString(@"Piadinas", @"Piadinas");
         {
             NSData *imgData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"3-piadina" ofType:@"png"]];
