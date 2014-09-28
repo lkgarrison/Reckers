@@ -8,6 +8,7 @@
 
 #import "ReckersViewController.h"
 #import "PickupView.h"
+#import <Parse/Parse.h>
 
 
 @interface ReckersViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -16,8 +17,18 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *orderView;
 
-@property (strong, nonatomic) NSArray *pizzas;
-@property (strong, nonatomic) NSArray *sandwiches;
+@property (strong, nonatomic) NSMutableArray *pizzas;
+@property (strong, nonatomic) NSMutableArray *pizzaPrices;
+@property (strong, nonatomic) NSMutableArray *breakfasts;
+@property (strong, nonatomic) NSMutableArray *breakfastPrices;
+@property (strong, nonatomic) NSMutableArray *sides;
+@property (strong, nonatomic) NSMutableArray *sidePrices;
+@property (strong, nonatomic) NSMutableArray *american;
+@property (strong, nonatomic) NSMutableArray *americanPrices;
+@property (strong, nonatomic) NSMutableArray *salads;
+@property (strong, nonatomic) NSMutableArray *saladPrices;
+@property (strong, nonatomic) NSMutableArray *piadinas;
+@property (strong, nonatomic) NSMutableArray *piadinaPrices;
 
 @property (nonatomic) NSInteger selectedSection;
 @property (weak, nonatomic) IBOutlet UITableView *collapsibleTable;
@@ -28,12 +39,52 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+	self.pizzas = [[NSMutableArray alloc] init];
+	self.pizzaPrices = [[NSMutableArray alloc] init];
+	self.breakfasts = [[NSMutableArray alloc] init];
+	self.breakfastPrices = [[NSMutableArray alloc] init];
+	self.sides = [[NSMutableArray alloc] init];
+	self.sidePrices = [[NSMutableArray alloc] init];
+	self.american = [[NSMutableArray alloc] init];
+	self.americanPrices = [[NSMutableArray alloc] init];
+	self.salads = [[NSMutableArray alloc] init];
+	self.saladPrices = [[NSMutableArray alloc] init];
+	self.piadinas = [[NSMutableArray alloc] init];
+	self.piadinaPrices = [[NSMutableArray alloc] init];
     
     self.orderView.delegate = self;
     self.orderView.dataSource = self;
     
     self.selectedSection = -1;
-
+	
+	PFQuery *query = [PFQuery queryWithClassName:@"Menu"];
+	[query selectKeys:@[@"foodCategory", @"item", @"price", @"description"]];
+	NSArray *queryResponse = [query findObjects:nil];
+	for (NSDictionary *foodDict in queryResponse) {
+		NSString *foodType = [foodDict objectForKey:@"foodCategory"];
+		NSString *foodName = [foodDict objectForKey:@"item"];
+		NSNumber *foodPrice = [foodDict objectForKey:@"price"];
+		NSLog(@"%@", foodType);
+		if ([foodType isEqualToString:@"Pizza"]) {
+			[self.pizzas addObject:foodName];
+			[self.pizzaPrices addObject:foodPrice];
+		} else if ([foodType isEqualToString:@"Breakfast"]) {
+			[self.breakfasts addObject:foodName];
+			[self.breakfastPrices addObject:foodPrice];
+		} else if ([foodType isEqualToString:@"Sides"]) {
+			[self.sides addObject:foodName];
+			[self.sidePrices addObject:foodPrice];
+		} else if ([foodType isEqualToString:@"American Fare"]) {
+			[self.american addObject:foodName];
+			[self.americanPrices addObject:foodPrice];
+		} else if ([foodType isEqualToString:@"Salad"]) {
+			[self.salads addObject:foodName];
+			[self.saladPrices addObject:foodPrice];
+		} else if ([foodType isEqualToString:@"Piadinas"]) {
+			[self.piadinas addObject:foodName];
+			[self.piadinaPrices addObject:foodPrice];
+		}
+	}
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -50,10 +101,22 @@
         switch (section) {
             case 0:
                 return self.pizzas.count;
-                
+				break;
             case 1:
-                return self.sandwiches.count;
-                
+                return self.breakfasts.count;
+				break;
+			case 2:
+				return self.sides.count;
+				break;
+			case 3:
+				return self.american.count;
+				break;
+			case 4:
+				return self.salads.count;
+				break;
+			case 5:
+				return self.piadinas.count;
+				break;
             default:
                 return 2;
         }
@@ -73,31 +136,33 @@
         switch (indexPath.section) {
             case 0:
                 cell.textLabel.text = self.pizzas[indexPath.row];
+				//cell.detailTextLabel.text = (NSString *)self.pizzaPrices[indexPath.row];
                 break;
             case 1:
-                cell.textLabel.text = self.sandwiches[indexPath.row];
+                cell.textLabel.text = self.breakfasts[indexPath.row];
+				cell.detailTextLabel.text = [NSString stringWithFormat:@"$%@", self.breakfastPrices[indexPath.row]];
                 break;
-                // ...
             case 2:
-                cell.textLabel.text = NSLocalizedString(@"Piadinas", @"Piadinas");
+				cell.textLabel.text = self.sides[indexPath.row];
+				cell.detailTextLabel.text = self.sidePrices[indexPath.row];
                 break;
             case 3:
-                cell.textLabel.text = NSLocalizedString(@"Sides", @"Sides");
+				cell.textLabel.text = self.american[indexPath.row];
+				cell.detailTextLabel.text = self.americanPrices[indexPath.row];
                 break;
             case 4:
-                cell.textLabel.text = NSLocalizedString(@"Salads", @"Salads");
+				cell.textLabel.text = self.salads[indexPath.row];
+				cell.detailTextLabel.text = self.saladPrices[indexPath.row];
                 break;
             case 5:
-                cell.textLabel.text = NSLocalizedString(@"Breakfast", @"Breakfast");
+				cell.textLabel.text = self.piadinas[indexPath.row];
+				cell.detailTextLabel.text = self.piadinaPrices[indexPath.row];
                 break;
             default:
                 cell.textLabel.text = @"";
                 break;
 
         }
-        
-        cell.detailTextLabel.text = @"$2.00";
-        
     }
     
     return cell;
@@ -110,7 +175,7 @@ viewForHeaderInSection:(NSInteger)section {
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 48)];
     label.text = @"Header";
-	label.font = [UIFont fontWithName:@"Montserrat-Regular" size:60];
+	label.font = [UIFont fontWithName:@"Montserrat-Regular" size:45];
     
     //test
     NSString *sectionName;
