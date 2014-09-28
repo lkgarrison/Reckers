@@ -8,8 +8,10 @@
 
 #import "OrderView.h"
 
+@interface OrderView ()
+
+@end
+
 @implementation OrderView
-
-
 
 @end
