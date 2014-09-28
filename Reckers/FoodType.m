@@ -25,4 +25,8 @@
 	return [self.name isEqualToString:[object name]];
 }
 
+- (void)addObject:(Food *)food {
+	[self.foods addObject:food];
+}
+
 @end
