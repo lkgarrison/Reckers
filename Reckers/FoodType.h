@@ -16,5 +16,6 @@
 
 - (instancetype)initWithName:(NSString *)name Food:(Food *)food;
 + (NSString *)name;
+- (void)addObject:(Food *)food;
 
 @end
