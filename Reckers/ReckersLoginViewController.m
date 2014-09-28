@@ -7,7 +7,6 @@
 //
 
 #import "ReckersLoginViewController.h"
-#import "CollapsibleTableViewController.h"
 
 @interface ReckersLoginViewController ()
 

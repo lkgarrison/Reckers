@@ -24,6 +24,8 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Source Sans Pro Semibold.ttf</string>
+		<string>Source Sans Pro Regular.ttf</string>
 		<string>Montserrat-Regular.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>

@@ -64,7 +64,6 @@
 		NSString *foodType = [foodDict objectForKey:@"foodCategory"];
 		NSString *foodName = [foodDict objectForKey:@"item"];
 		NSNumber *foodPrice = [foodDict objectForKey:@"price"];
-		NSLog(@"%@", foodType);
 		if ([foodType isEqualToString:@"Pizza"]) {
 			[self.pizzas addObject:foodName];
 			[self.pizzaPrices addObject:foodPrice];
@@ -136,7 +135,7 @@
         switch (indexPath.section) {
             case 0:
                 cell.textLabel.text = self.pizzas[indexPath.row];
-				//cell.detailTextLabel.text = (NSString *)self.pizzaPrices[indexPath.row];
+				cell.detailTextLabel.text = [NSString stringWithFormat:@"$%@", self.pizzaPrices[indexPath.row]];
                 break;
             case 1:
                 cell.textLabel.text = self.breakfasts[indexPath.row];
@@ -144,19 +143,19 @@
                 break;
             case 2:
 				cell.textLabel.text = self.sides[indexPath.row];
-				cell.detailTextLabel.text = self.sidePrices[indexPath.row];
+				cell.detailTextLabel.text = [NSString stringWithFormat:@"$%@", self.sidePrices[indexPath.row]];
                 break;
             case 3:
 				cell.textLabel.text = self.american[indexPath.row];
-				cell.detailTextLabel.text = self.americanPrices[indexPath.row];
+				cell.detailTextLabel.text = [NSString stringWithFormat:@"$%@", self.americanPrices[indexPath.row]];
                 break;
             case 4:
 				cell.textLabel.text = self.salads[indexPath.row];
-				cell.detailTextLabel.text = self.saladPrices[indexPath.row];
+				cell.detailTextLabel.text = [NSString stringWithFormat:@"$%@", self.saladPrices[indexPath.row]];
                 break;
             case 5:
 				cell.textLabel.text = self.piadinas[indexPath.row];
-				cell.detailTextLabel.text = self.piadinaPrices[indexPath.row];
+				cell.detailTextLabel.text = [NSString stringWithFormat:@"$%@", self.piadinaPrices[indexPath.row]];
                 break;
             default:
                 cell.textLabel.text = @"";
@@ -183,12 +182,13 @@ viewForHeaderInSection:(NSInteger)section {
     {
         case 0:
             sectionName = NSLocalizedString(@"Pizza", @"Pizza");
+			header.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Pizza"]];
             break;
         case 1:
             sectionName = NSLocalizedString(@"Sandwiches", @"Sandwiches");
+			
             break;
-            // ...
-        case 2:
+		case 2:
             sectionName = NSLocalizedString(@"Piadinas", @"Piadinas");
             break;
         case 3:
